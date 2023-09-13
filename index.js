@@ -11,23 +11,23 @@ let firsCard = false;
 let secondCard = false;
 
 const items = [
-  {name: 'image1', image: '/src/images/image1.png'},
-  {name: 'image2', image: '/src/images/image2.png'},
-  {name: 'image3', image: '/src/images/image3.png'},
-  {name: 'image4', image: '/src/images/image4.png'},
-  {name: 'image5', image: '/src/images/image5.png'},
-  {name: 'image6', image: '/src/images/image6.png'},
-  {name: 'image7', image: '/src/images/image7.png'},
-  {name: 'image8', image: '/src/images/image8.png'},
-  {name: 'image9', image: '/src/images/image9.png'},
-  {name: 'image10', image: '/src/images/image10.png'},
-  {name: 'image11', image: '/src/images/image11.png'},
-  {name: 'image12', image: '/src/images/image12.png'},
-  {name: 'image13', image: '/src/images/image13.png'},
-  {name: 'image14', image: '/src/images/image14.png'},
-  {name: 'image15', image: '/src/images/image15.png'},
-  {name: 'image16', image: '/src/images/image16.png'},
-  {name: 'image17', image: '/src/images/image17.png'}
+  {name: 'image1', image: 'images/image1.png'},
+  {name: 'image2', image: 'images/image2.png'},
+  {name: 'image3', image: 'images/image3.png'},
+  {name: 'image4', image: 'images/image4.png'},
+  {name: 'image5', image: 'images/image5.png'},
+  {name: 'image6', image: 'images/image6.png'},
+  {name: 'image7', image: 'images/image7.png'},
+  {name: 'image8', image: 'images/image8.png'},
+  {name: 'image9', image: 'images/image9.png'},
+  {name: 'image10', image: 'images/image10.png'},
+  {name: 'image11', image: 'images/image11.png'},
+  {name: 'image12', image: 'images/image12.png'},
+  {name: 'image13', image: 'images/image13.png'},
+  {name: 'image14', image: 'images/image14.png'},
+  {name: 'image15', image: 'images/image15.png'},
+  {name: 'image16', image: 'images/image16.png'},
+  {name: 'image17', image: 'images/image17.png'}
 ];
 
 // initial time
