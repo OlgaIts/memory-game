@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@200;500&display=swap');
+
+:root {
+  --bg: #f4c8fa;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0 30px;
+}
+
+body {
+  font-family: 'Grandstander', cursive;
+  background-color: var(--bg);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title-wrap {
+display: grid;
+justify-content: end;
+}
+
+.title {
+  font: 500 4.5em 'Grandstander', cursive;
+}
+
+.text {
+  font: 300 2em 'Grandstander', cursive;
+  justify-self: end;
+}
+
+.image {
+  width: 110px;
+  height: 110px;
+}
+
+.wrapper {
+  width: 43.2em;
+  padding: 4em 4.8em;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 14px 44.5px rgba(86, 66, 0, 0.2);
+  font: 300 11px 'Grandstander', cursive;
+  box-sizing: content-box;
+}
+
+.stats-container {
+  text-align: right;
+  margin-bottom: 1em;
+  font: 300 16px 'Grandstander', cursive;
+}
+.stats-container span {
+  font-weight: 500;
+}
+.game-container {
+  position: relative;
+  width: 100%;
+  display: grid;
+  gap: 1em;
+}
+
+.card-container {
+  position: relative;
+  width: 10em;
+  height: 10em;
+  cursor: pointer;
+}
+
+.card-before,
+.card-after {
+  position: absolute;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #000;
+  transition: transform 0.7s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.card-before {
+  background-color: var(--bg);
+  font: 500 4.5em 'Grandstander', cursive;
+}
+
+.card-after {
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-before {
+  transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-after {
+  transform: rotateY(0deg);
+}
+
+.controls-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bg);
+}
+
+button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.6em;
+  cursor: pointer;
+}
+
+#stop {
+  display: block;
+  font-size: 1.7em;
+  margin: 1.7em auto 0 auto;
+  background-color: #000;
+  color: #fff;
+}
+
+.controls-container button {
+  font-size: 1.8em;
+  box-shadow: 0 14px 44.5px rgba(86, 66, 0, 0.2);
+}
+
+.hide {
+  display: none;
+}
+
+#result {
+  text-align: center;
+}
+
+#result h2 {
+  font: 500 4em 'Grandstander', cursive;
+}
+
+#result h4 {
+  font: 300 2.5em 'Grandstander', cursive;
+  margin-bottom: 2em;
+}
